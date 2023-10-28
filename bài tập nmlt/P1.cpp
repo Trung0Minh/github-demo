@@ -6,6 +6,66 @@ double fac(int n) {
     else return n * fac(n - 1);
 }
 
+void BPTLon(int a, int b, int c, int delta) {
+    int x1, x2;
+    if (delta < 0) {
+        if (a > 0) {
+            printf("Bat phuong trinh luon dung voi moi x");
+        }
+        else {
+            printf("Bat phuong trinh vo nghiem");
+        }
+    }
+
+    if (delta == 0) {
+        if (a > 0) {
+            printf("Bat phuong trinh luôn ?úng voi moi x khac %d", x1);
+        }
+        else {
+            printf("Bat phuong trinh vo nghiem");
+        }
+    }
+
+    if (delta > 0) {
+        if (a > 0) {
+            printf("Bat phuong trinh luon dung voi moi x < %lf v x > %lf", x1, x2);
+        }
+        else {
+            printf("Bat phuong trinh luon dung voi moi %lf < x < %lf", x1, x2);
+        }
+    }
+}
+
+void BPTBe(int a, int b, int c, int delta) {
+    int x1, x2;
+    if (delta < 0) {
+        if (a < 0) {
+            printf("Bat phuong trinh luon dung voi moi x");
+        }
+        else {
+            printf("Bat phuong trinh vo nghiem");
+        }
+    }
+
+    if (delta == 0) {
+        if (a < 0) {
+            printf("Bat phuong trinh luôn ?úng voi moi x khac %d", x1);
+        }
+        else {
+            printf("Bat phuong trinh vo nghiem");
+        }
+    }
+
+    if (delta > 0) {
+        if (a < 0) {
+            printf("Bat phuong trinh luon dung voi moi x < %lf v x > %lf", x1, x2);
+        }
+        else {
+            printf("Bat phuong trinh luon dung voi moi %lf < x < %lf", x1, x2);
+        }
+    }
+}
+
 int main1() {
 
     /*int n, k;
